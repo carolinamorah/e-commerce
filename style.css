@@ -4,77 +4,74 @@
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr, 3fr;
-    grid-template-rows: 10% 80% auto;
-    grid-template-areas:
-    "header header"
-    "menú productos"
-    "footer footer";
+    grid-template-rows: 1fr 1fr 80% 1fr;
     height: 100vh;
+    grid-template-areas: 
+    "nav"
+    "filter"
+    "main"
+    "footer";
 }
-header{
-    grid-area: header;
-    /*background-color: rgb(143, 168, 161); */  
-    background-color:#b8d3bf
+nav{
+    background-color: rgb(165, 203, 191);
+    padding: 20px;
+    grid-area: nav;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
 }
 h3{
     color: #fcf9f3;
     font-family: moon dance;
     font-weight:bolder;
-    font-size: 35px;
-    text-align:center;
-    padding: 4px 0;
+    font-size: 28px;
 }
-menu{
-    padding: 30px;
-    display: flex;
-    align-items: flex-start; 
-    flex-direction:column;
-    grid-area: menú;
-    background-color:rgb(216, 221, 218);
-    flex-wrap: nowrap;
+section{
+    display: grid;
+    align-content: center;
+    background-color: darkgrey;
+    padding: 15px 25px;
+    grid-area: filter;
 }
-.categories:hover{
-    background-color: rgb(235, 235, 235);
-    width: 100%;
+select{
+    border-radius: 3px;
+    height: 25px;
+    border: none;
+}
+select:focus{ 
+    outline: none;
 }
 h4{
-    margin-bottom: 1.5em;
+    text-align: center;
+    margin-bottom: 4px;
 }
-p{
-    padding: 8px 0;
-    color: #1a3d47;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-}
-span{
-    color: #9da8ac
-}
-
 main{
-    grid-area: productos;
+    grid-area: main;
     background-color:rgba(245, 245, 245, 0.919);
     overflow-y: scroll;
 }
 .products-container{
-    gap: 20px;
     display: grid;
-    grid-template-columns: auto auto auto; 
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
     justify-items: center;  
-    min-height: 85vh;
-    margin: 30px;
+    margin: 20px;
+    min-height: 75vh;
 }
-.card{
+.products-container .card{
     display: flex;
-    height: 480px;
+    height: auto;
+    width: 380px;
     align-items: center; 
     flex-direction:column;
     background-color: rgb(248, 246, 246);
     border: 1px solid rgb(220, 218, 218);
+    box-shadow: 4px 6px 7px rgb(211, 208, 208);
 }
 .card img{
-    width: 300px;
-    height: 380px;
+    width: 380px;
+    height: 428px;
     transition: transform 0.1s;
 }
 .card img:hover{
@@ -100,7 +97,6 @@ button:hover{
 button:focus{
     background-color: rgb(214, 209, 209);
 }
-
 footer{
     grid-area: footer;
     background-color: rgb(241, 227, 214);

@@ -10,15 +10,27 @@
 </head>
 <body>
     <div class="grid-container">
-        <menu>
-            <h4>Categories</h4> 
-            <p class="categories">Interior Plants<span> (10)</span></p>
-            <p class="categories">Exterior Plants<span> (8)</span></p>
-            <p class="categories">Cactus<span> (12)</span></p>
-            <p class="categories">Planters<span> (20)</span></p>
-            <p class="categories">Flower Pots<span> (15)</span></p>
-            <p class="categories">Garden Accessories<span> (30)</span></p>
-        </menu>       
+        <nav class="flex-container">
+            <div>
+                <span>
+                    <i>icono</i>
+                    <h3>My Garden</h3>
+                </span>   
+            </div>
+            <div>
+                <i>hamburguesa</i>
+            </div>
+        </nav>
+        <section>
+            <h4>Order By</h4>
+            <select name="select">
+                <option value="value1" selected>Price</option>
+                <option value="value2">Interior plants</option>
+                <option value="value3">Exterior Plants</option>
+                <option value="value4">Color</option>
+                <option value="value5">Cactus</option>
+            </select>
+        </section>
         <main>
             <div class="products-container">
                 <div class="card">
@@ -39,33 +51,9 @@
                     <p>$10.00</p>
                     <button>Buy</button>
                 </div>
-                <div class="card">
-                    <img src="assets/5.jpg" alt="">
-                    <p><b>Flower vase</b></p>
-                    <p>$10.00</p>
-                    <button>Buy</button>
-                </div>
-                <div class="card">
-                    <img src="assets/6.jpg" alt="">
-                    <p><b>Succulent</b></p>
-                    <p>$10.00</p>
-                    <button>Buy</button>
-                </div>
-                <div class="card">
-                    <img src="assets/7.jpg" alt="">
-                    <p><b>Cactus</b></p>
-                    <p>$10.00</p>
-                    <button>Buy</button>
-                </div>
-                <div class="card">
-                    <img src="assets/8.jpg" alt="">
-                    <p><b>Sansevieria</b></p>
-                    <p>$10.00</p>
-                    <button>Buy</button>
-                </div>
             </div>
         </main>
-        <footer> @mygarden </footer>
+        <footer>@mygarden</footer>
     </div>   
 </body>
 </html>
