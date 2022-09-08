@@ -7,22 +7,36 @@
     <title>Desafío GRID</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Maven+Pro&family=Moon+Dance&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
     <div class="grid-container">
         <nav class="flex-container">
-            <div>
-                <span>
-                    <i>icono</i>
-                    <h3>My Garden</h3>
-                </span>   
+            <div class="title">
+                <ul>
+                    <li>
+                        <p id="logo"><i class="fas fa-seedling fa-2x"></i></p>
+                    </li>
+                    <li>
+                        <h3>My Garden</h3>
+                    </li>
+                </ul> 
             </div>
-            <div>
-                <i>hamburguesa</i>
+            <div class="nav-list">
+                <p class="categories">Interior Plants<span> (10)</span></p>
+                <p class="categories">Exterior Plants<span> (8)</span></p>
+                <p class="categories">Cactus<span> (12)</span></p>
+                <p class="categories">Planters<span> (20)</span></p>
+                <p class="categories">Flower Pots<span> (15)</span></p>
+                <p class="categories">Garden Accessories<span> (30)</span></p>
+            </div>
+            
+            <div class="hamburger">
+                <p class="bars"><i class="fas fa-bars fa-2x"></i></p>
             </div>
         </nav>
-        <section>
-            <h4>Order By</h4>
+        <section class="filter">
+            <h5>Order By</h5>
             <select name="select">
                 <option value="value1" selected>Price</option>
                 <option value="value2">Interior plants</option>
@@ -37,23 +51,67 @@
                     <img src="assets/1.jpg" alt="">
                     <p><b>Grey planter</b></p>
                     <p>$10.00</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
                 </div>
-                <div class="card">
+                <div class="card cards">
                     <img src="assets/2.jpg" alt="">
                     <p><b>Flower spot</b></p>
                     <p>$10.00</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
                 </div>
-                <div class="card">
+                <div class="card cards">
                     <img src="assets/4.jpg" alt="">
                     <p><b>Round shelf</b></p>
                     <p>$10.00</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
+                </div>
+                <div class="card cards">
+                    <img src="assets/5.jpg" alt="">
+                    <p><b>Flower vase</b></p>
+                    <p>$10.00</p>
+                    <button class="buy">Buy</button>
+                </div>
+                <div class="card cards">
+                    <img src="assets/6.jpg" alt="">
+                    <p><b>Succulent</b></p>
+                    <p>$10.00</p>
+                    <button class="buy">Buy</button>
+                </div>
+                <div class="card cards">
+                    <img src="assets/7.jpg" alt="">
+                    <p><b>Cactus</b></p>
+                    <p>$10.00</p>
+                    <button class="buy">Buy</button>
+                </div>
+                <div class="card cards">
+                    <img src="assets/8.jpg" alt="">
+                    <p><b>Sansevieria</b></p>
+                    <p>$10.00</p>
+                    <button class="buy">Buy</button>
+                </div>
+                <div class="card cards">
+                    <img src="assets/5.jpg" alt="">
+                    <p><b>Flower vase</b></p>
+                    <p>$10.00</p>
+                    <button class="buy">Buy</button>
                 </div>
             </div>
+        
+                <div class="passpag">
+                    <button class="pag"><<</button>
+                    <button class="pag">1</button>
+                    <button class="pag">2</button>
+                    <button class="pag">3</button>
+                    <button class="pag">>></button>
+                </div>
+            
         </main>
-        <footer>@mygarden</footer>
+        
+        <footer>
+            <img src="assets/facebook.svg" alt="">
+            <img src="assets/instagram.svg" alt="">
+            <p>Todos los derechos reservados</p>  
+        </footer>
     </div>   
 </body>
 </html>
